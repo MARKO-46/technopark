@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technopark</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technopark</h1>
+    </header>
+    <div class="container">
+        <h2>Registrierung für neue Kunden</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Firma:</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="industry">Branche:</label>
+                <select id="industry" name="industry" required>
+                    <option value="IT">IT</option>
+                    <option value="Biotechnologie">Biotechnologie</option>
+                    <option value="Maschinenbau">Maschinenbau</option>
+                    <option value="Automobil">Automobil</option>
+                    <option value="andere">Andere</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrieren">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
